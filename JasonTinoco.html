@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Tinoco</title>
+
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+     <!-- Compiled and minified CSS -- Compilacion minificada de CSS Materialize desde su servidor-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    
+    <div class="navbar-fixed">
+        <nav class="red">
+            <div class=" container nav-wrapper">
+                <img src="logo1.png" alt="" class="right responsive-img">
+                
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger left">
+                        <i class="material-icons">menu</i>
+                </a>
+
+                <ul id="menu-responsive" class="sidenav">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                    <li><a href="#">Conocimientos</a></li>
+                    <li><a href="#">Contactame</a></li>
+                </ul>
+
+                <ul class="left green hide-on-med-and-down">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                    <li><a href="#">Conocimientos</a></li>
+                    <li>
+                        <a href="#" class="dropdown-trigger" data-target="id_dropdown">
+                            Proyectos
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                        <ul id="id_dropdown" class="dropdown-content">
+                                <li><a href="#">CiberStore</a></li>
+                                <li><a href="#">Mr Geek</a></li>
+                                <li><a href="#">Andronew</a></li>
+                                <li><a href="#">Otro MAs</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Contactame</a></li>
+                </ul>
+                
+            
+            </div>
+        </nav>
+    </div>
+
+
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <!-- Script para iniciar todos los JS de Materialize JS-->
+     <script>
+         //Function que hace funcionar el menu-responsivo
+          document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems);
+            });
+
+
+         /*document.addEventListener('DOMContentLoaded', function(){
+             M.AutoInit();  
+         });*/
+     </script>
+</body>
+</html>
