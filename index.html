@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jason Tinoco</title>
+
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -- Compilacion minificada de CSS Materialize desde su servidor-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    <!--ponemos un div con la clase navbar-fixed para que el nav se quede pegado a la parte superior-->  
+    <div class="navbar-fixed">
+        <nav class="blue">
+            <div class="nav-wraper container">
+                <!--La clase brand-logo le da otra apariencia al texto-->
+                <a href="#" class="brand-logo">Jason Tinoco</a>
+                
+                <!--data target cualquier nombre/ clase que permite desaparecer en dispositivos grandes -->
+                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
+                    <!-- clase de iconos material de google y fuera de ello el nombre del icono -->
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <!--Clase que junta el ul a la derecha / que lo oculta y pone debajo cuando esta en dispositivos medium-->
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                    <!--Haremos que este item sea con Droptown-->
+                    <li>
+                        <!--Esta clase hace que el item contenga otros li/ data-target para identificar-->
+                        <a href="#" class="dropdown-trigger" data-target="drop-ul">Proyectos
+                            <!-- clase de iconos material de google a la derecha y fuera de ello el nombre del icono -->
+                            <i class="material-icons right">arrow_drop_down</i>
+                        </a>
+                        <!--Seccion ul del menu que estara dentro del dropdown y puede estar codeado en cualquier lado-->
+                        <!--clase hace que se oculte el UL/ id permite que se abra cuando se da click en su data-target -->
+                        <ul class="dropdown-content" id="drop-ul">
+                                <li><a href="#">AndroNew</a></li>
+                                <li><a href="#">Mr Geek</a></li>
+                                <li><a href="#">CiberStore</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                
+
+                <!--Seccion ul del menu que estara dentro del menu responsivo y puede estar codeado en cualquier lado-->
+                <!--clase hace que se oculte el UL/ id permite que se abra cuando se da click en su data-target -->
+                <ul class="sidenav" id="menu-responsive">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre Mi</a></li>
+                    <li><a href="#">Proyectos</a></li>
+
+                </ul>
+            </div>
+        </nav>  
+    </div>
+
+
+    <!-- Div de el boton flotante para mis redes sociales-->
+    <!--Clase que permite que el boton este flotanto al lado inf/der de la pantalla-->
+    <div class="fixed-action-btn">
+
+            <!--Clase qeu hace que el boton sea florante/ rojo / largo -->
+            <a href="#" class="btn-floating blue btn-large">
+                <!--Poner iconos-->
+                <i class="material-icons">person</i>
+            </a>
+    
+            <!--Enlaces que estarán dentro del boton-->
+            <ul>
+                <li>
+                    <a href="#" class="btn-floating green">
+                        <i class="material-icons">mood</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="btn-floating red">
+                        <i class="material-icons">sentiment_very_dissatisfied</i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    
+    
+    
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Script para iniciar todos los JS de Materialize JS-->
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            M.AutoInit();
+        });
+    </script>
+</body>
+</html>
