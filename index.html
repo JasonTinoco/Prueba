@@ -6,98 +6,220 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jason Tinoco</title>
 
+     <!--Import Google Icon Font-->
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <!-- Compiled and minified CSS -- Compilacion minificada de CSS Materialize desde su servidor-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Compiled and minified CSS -- Compilacion minificada de CSS Materialize desde su servidor-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
-    <!--ponemos un div con la clase navbar-fixed para que el nav se quede pegado a la parte superior-->  
-    <div class="navbar-fixed">
-        <nav class="blue">
-            <div class="nav-wraper container">
-                <!--La clase brand-logo le da otra apariencia al texto-->
-                <a href="#" class="brand-logo">
-                    Jason Tinoco
-                </a>
-                
-                <!--data target cualquier nombre/ clase que permite desaparecer en dispositivos grandes -->
-                <a href="#" data-target="menu-responsive" class="sidenav-trigger">
-                    <!-- clase de iconos material de google y fuera de ello el nombre del icono -->
-                    <i class="material-icons">menu</i>
-                </a>
-
-                <!--Clase que junta el ul a la derecha / que lo oculta y pone debajo cuando esta en dispositivos medium-->
-                <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Mi</a></li>
-                    <!--Haremos que este item sea con Droptown-->
-                    <li>
-                        <!--Esta clase hace que el item contenga otros li/ data-target para identificar-->
-                        <a href="#" class="dropdown-trigger" data-target="drop-ul">Proyectos
-                            <!-- clase de iconos material de google a la derecha y fuera de ello el nombre del icono -->
-                            <i class="material-icons right">arrow_drop_down</i>
-                        </a>
-                        <!--Seccion ul del menu que estara dentro del dropdown y puede estar codeado en cualquier lado-->
-                        <!--clase hace que se oculte el UL/ id permite que se abra cuando se da click en su data-target -->
-                        <ul class="dropdown-content" id="drop-ul">
-                                <li><a href="#">AndroNew</a></li>
-                                <li><a href="#">Mr Geek</a></li>
+    
+     <!--Div General que contiene los Menus-->
+     <div class="navbar">
+            <nav class="blue-grey lighten-1">
+                <div class=" container nav-wrapper">
+                    <img src="logo1.png" alt="" class="right responsive-img">
+                    
+                    <a href="#" data-target="menu-side" class="sidenav-trigger left">
+                            <i class="material-icons">menu</i>
+                    </a>
+                    
+                    <!--Menu lateral donde esta mi informacion-->
+                    <ul class="sidenav" id="menu-side">
+                        <li>
+                            <div class="user-view">
+                                <div class="background">
+                                    <img src="https://cdn.pixabay.com/photo/2018/01/24/17/33/light-bulb-3104355_960_720.jpg" alt="">
+                                </div>
+                                
+                                <a href="">
+                                    <img src="perfil.jpg" alt="" class="circle">
+                                </a>
+                                <a href="">
+                                    <span class="name white-text">Jason Tinoco</span>
+                                </a>
+                                <a href="">
+                                    <span class="email white-text">jasontm@Outlook.es</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                        <li>
+                            <a href="">
+                                <i class="material-icons">cloud</i>
+                                Sobre Mi
+                            </a>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">cloud</i>
+                                Conocimientos
+                            </a>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">cloud</i>
+                                Proyectos
+                            </a>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="material-icons">cloud</i>
+                                Contactame
+                            </a>
+                        </li>
+                        <li>
+                            <div class="divider"></div>
+                        </li>
+                    </ul>
+                    
+                    <!--Menu que se muestra en el navbar-->
+                    <ul class="center hide-on-med-and-down">
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Sobre Mi</a></li>
+                        <li><a href="#">Conocimientos</a></li>
+                        <li>
+                            <a href="#" class="dropdown-trigger" data-target="id_dropdown">
+                                Proyectos
+                                <i class="material-icons right">arrow_drop_down</i>
+                            </a>
+                            <ul id="id_dropdown" class="dropdown-content">
                                 <li><a href="#">CiberStore</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                                    <li><a href="#">Mr Geek</a></li>
+                                    <li><a href="#">Andronew</a></li>
+                                    <li><a href="#">Otro MAs</a></li>
+                                </ul>
+                        </li>
+                        <li><a href="">Contactame</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
 
-                
-
-                <!--Seccion ul del menu que estara dentro del menu responsivo y puede estar codeado en cualquier lado-->
-                <!--clase hace que se oculte el UL/ id permite que se abra cuando se da click en su data-target -->
-                <ul class="sidenav" id="menu-responsive">
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Sobre Mi</a></li>
-                    <li><a href="#">Proyectos</a></li>
-
-                </ul>
+    <!-- Parallax Inicial Que contiene el Div Navbar con su imagen parallax -->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://cdn.pixabay.com/photo/2018/02/16/10/52/beverage-3157395_960_720.jpg" alt=""
+            class="responsive-img">
+            
+            <!-- Div que contiene el texto sobre mi-->
+            <div class="container">
+                <h4>Hola, Soy Jason Tinoco</h4>
+                <h4>Soy estudiante de Infomática</h4>
+                <h4>Y me apasiona desarrollar software</h4>
             </div>
-        </nav>  
+
+        </div>
+    </div>
+
+    <!-- Div de Sobre mi con su imagen parallax -->
+    <div class="container z-depth-4 blue-grey lighten-2">
+        <div class="hide-on-small-and-down">
+                <blockquote>
+                    <h1 class="center">Sobre Mi</h1>
+                </blockquote>
+        </div>
+        <div class="hide-on-med-and-up">
+                <blockquote>
+                    <h4 class="center">Sobre mi</h4>
+                </blockquote>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://cdn.pixabay.com/photo/2018/01/24/17/33/light-bulb-3104355_960_720.jpg" alt=""
+            class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Div de Conocimientos con su imagen parallax -->
+    <div class="container z-depth-3 blue-grey lighten-3">
+        <div class="hide-on-small-and-down">
+                <blockquote>
+                    <h1 class="center">Conocimientos</h1>
+                </blockquote>
+        </div>
+        <div class="hide-on-med-and-up">
+                <blockquote>
+                    <h4 class="center">Conocimientos</h4>
+                </blockquote>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://cdn.pixabay.com/photo/2018/02/08/10/22/desk-3139127_960_720.jpg" alt=""
+            class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Div de Proyectos con su imagen parallax -->
+    <div class="container z-depth-2 blue-grey lighten-4">
+        <div class="hide-on-small-and-down">
+                <blockquote>
+                    <h1 class="center">Proyectos</h1>
+                </blockquote>
+        </div>
+        <div class="hide-on-med-and-up">
+                <blockquote>
+                    <h4 class="center">Proyetos</h4>
+                </blockquote>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://cdn.pixabay.com/photo/2018/05/03/09/20/business-3370832_960_720.jpg" alt=""
+            class="responsive-img">
+        </div>
+    </div>
+
+    <!-- Div de Contactame con su imagen parallax -->
+    <div class="container z-depth-1 blue-grey lighten-5">
+        <div class="hide-on-small-and-down">
+                <blockquote>
+                    <h1 class="center">Contactame</h1>
+                </blockquote>
+        </div>
+        <div class="hide-on-med-and-up">
+                <blockquote>
+                    <h4 class="center">Contactame</h4>
+                </blockquote>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="https://cdn.pixabay.com/photo/2018/04/06/11/21/office-3295556_960_720.jpg" alt=""
+            class="responsive-img">
+        </div>
     </div>
 
 
-    <!-- Div de el boton flotante para mis redes sociales-->
-    <!--Clase que permite que el boton este flotanto al lado inf/der de la pantalla-->
-    <div class="fixed-action-btn">
-
-            <!--Clase qeu hace que el boton sea florante/ rojo / largo -->
-            <a href="#" class="btn-floating blue btn-large">
-                <!--Poner iconos-->
-                <i class="material-icons">person</i>
-            </a>
-    
-            <!--Enlaces que estarán dentro del boton-->
-            <ul>
-                <li>
-                    <a href="#" class="btn-floating green">
-                        <i class="material-icons">mood</i>
-                    </a>
-                </li>
-                <li>
-                    <a href="#" class="btn-floating red">
-                        <i class="material-icons">sentiment_very_dissatisfied</i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    
-    
-    
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <!-- Script para iniciar todos los JS de Materialize JS-->
     <script>
+        
+        document.addEventListener('DOMContentLoaded', function() {
+        
+        //Function que hace funcionar el menu-responsivo
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.init(elems);
+        
+        //Function que hace funcionar el Parallax
+        var elems = document.querySelectorAll('.parallax');
+        var instances = M.Parallax.init(elems);
+        });
+        
         document.addEventListener('DOMContentLoaded', function(){
-            M.AutoInit();
+            M.AutoInit();  
         });
     </script>
 </body>
