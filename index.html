@@ -4,18 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <title>Jason Tinoco</title>
+    <!-- Icono de la Pestaña -->
+    <link rel="shortcut icon" href="logo1.png">
+    <!-- Importando el archivo para los estilos css-->
+    <link rel="stylesheet" href="estilos.css" type="text/css">
 
-     <!--Import Google Icon Font-->
-     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-     <!-- Compiled and minified CSS -- Compilacion minificada de CSS Materialize desde su servidor-->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified CSS -- Compilacion minificada de CSS Materialize desde su servidor-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 <body>
     
-     <!--Div General que contiene los Menus-->
-     <div class="navbar">
+    <!--Div General que contiene los Menus-->
+    <div class="navbar">
             <nav class="blue-grey lighten-1">
                 <div class=" container nav-wrapper">
                     <img src="logo1.png" alt="" class="right responsive-img">
@@ -103,21 +108,20 @@
                     </ul>
                 </div>
             </nav>
-        </div>
+    </div>
+
 
     <!-- Parallax Inicial Que contiene el Div Navbar con su imagen parallax -->
     <div class="parallax-container">
-        <div class="parallax">
-            <img src="img1.png" alt=""
-            class="responsive-img">
-            
-            <!-- Div que contiene el texto sobre mi-->
-            <div class="container">
-                <h4>Hola, Soy Jason Tinoco</h4>
-                <h4>Soy estudiante de Infomática</h4>
-                <h4>Y me apasiona desarrollar software</h4>
-            </div>
+        <div class="c-inicio parallax">
+            <img src="img1.png" alt=""class="responsive-img">
 
+            <div class="c-inicio-texto ">
+                <h1 class="hide-on-small-and-down">Hola, mi nombre es Jason Tinoco</h1>
+                <h4 class="hide-on-med-and-up">Hola, mi nombre es Jason Tinoco</h4>
+                <p class="flow-text">soy desarrollador de software
+                    y me encanta la tecnologia</p>
+            </div>
         </div>
     </div>
 
@@ -216,6 +220,12 @@
         //Function que hace funcionar el Parallax
         var elems = document.querySelectorAll('.parallax');
         var instances = M.Parallax.init(elems);
+        });
+
+        //Function que hace funcionar el texto encima del parallax
+        document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.slider');
+        var instances = M.Slider.init(elems);
         });
         
         document.addEventListener('DOMContentLoaded', function(){

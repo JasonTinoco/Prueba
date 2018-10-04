@@ -1,0 +1,25 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.c-inicio{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+   
+    justify-content: center;
+    align-items: center; 
+}
+
+.c-inicio-texto{
+    background-color:rgba(72, 69, 89, 0.9);
+    border-radius: 20px;
+    color: #FFFFFF;
+    margin: auto;
+    position: absolute;
+    text-align: center;
+    
+    width: 80%;
+}
